@@ -549,3 +549,103 @@ nav > ul li > a {
      object-fit: contain;
   background-color: #353738;
 }
+
+.slaider {
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slaider input {
+  display: none;
+}
+
+.slaider__colum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slaider__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  background: url(../img/slaid/icon.png) center 28% no-repeat;
+  padding: 188px 1% 179px;
+}
+
+.slaider__item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  color: #353738;
+}
+
+.slaider__item h3 span {
+  font-weight: 300;
+  color: #848789;
+}
+
+.slaider__item p {
+  max-width: 1036px;
+  margin: 18px auto 0;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.42;
+  letter-spacing: -0.02px;
+  color: #848789;
+}
+
+.slaider .page {
+  position: absolute;
+  bottom: 68px;
+  left: 47.9%;
+  z-index: 2;
+}
+
+.slaider .page label {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+  border: solid 1px #a9afb3;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 3px;
+}
+
+.slaider #slid1:checked ~ .page .control1,
+.slaider #slid2:checked ~ .page .control2,
+.slaider #slid3:checked ~ .page .control3 {
+  background-color: #a9afb3;
+}
+
+.slaider #slid1:checked ~ .slaider__colum {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.slaider #slid2:checked ~ .slaider__colum {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.slaider #slid3:checked ~ .slaider__colum {
+  -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+          transform: translateX(-200%);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
