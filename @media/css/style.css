@@ -649,3 +649,303 @@ nav > ul li > a {
   -o-transition: all .3s;
   transition: all .3s;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 680px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__blok {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__blok .footer__colum {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  position: relative;
+}
+
+.footer__blok .footer__colum > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer__blok .footer__colum:hover .footer__link > a {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer__blok .footer__link > a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 194, 158, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer__blok .footer__link > a p {
+  margin: 14px 0 0 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2.8px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__blok_flex div:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.shop {
+  background-color: #282f35;
+  padding: 4.7% 0;
+}
+
+.shop a {
+  display: block;
+  margin: 0 auto;
+  max-width: 296px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2.8px;
+  text-align: center;
+  color: #fff;
+  padding: 17px;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.contakt {
+  text-align: center;
+  padding: 105px 0 106px;
+}
+
+.contakt > div:first-child {
+  width: 95px;
+  height: 85px;
+  margin: 0 auto 39px;
+}
+
+.contakt > div:first-child img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contakt p {
+  margin: 0 0 35px;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  color: #848789;
+}
+
+.contakt form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contakt form input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
+  width: 400px;
+  height: 69px;
+  margin: 0 8px 8px;
+  padding: 0 28px;
+  border: solid 1px #d3d7d9;
+}
+
+.contakt form input::-webkit-input-placeholder {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  color: #929292;
+}
+
+.contakt form input:-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  color: #929292;
+}
+
+.contakt form input::-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  color: #929292;
+}
+
+.contakt form input::placeholder {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  color: #929292;
+}
+
+.contakt form button {
+  width: 126px;
+  height: 69px;
+  background-color: #64c29e;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+footer {
+  background-color: #f7f7f7;
+}
+
+footer .contener {
+  max-width: 1100px;
+  padding: 92px 1%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 500px) {
+  footer .contener {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .contener .contener__contact,
+  footer .contener .contener__messager {
+    margin-bottom: 5%;
+  }
+}
+
+footer .contener__contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+}
+
+@media (max-width: 500px) {
+  footer .contener__contact {
+    text-align: center;
+  }
+}
+
+footer .contener__contact p {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.29;
+  color: #848789;
+}
+
+footer .contener__contact p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+footer .contener__messager {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+}
+
+footer .contener__messager ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contener__messager ul li > a {
+  display: block;
+  background: url(../img/footer/twit.png) center center no-repeat;
+  width: 35px;
+  height: 35px;
+  margin: 0 7.5px;
+}
+
+footer .contener__messager ul li:nth-child(2) > a {
+  background: url(../img/footer/faceb.png) center center no-repeat;
+}
+
+footer .contener__messager ul li:nth-child(2) > a:hover {
+  opacity: 0.5;
+}
+
+footer .contener__messager ul li:nth-child(3) > a {
+  background: url(../img/footer/mail.png) center center no-repeat;
+}
+
+footer .contener__podpis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contener__podpis p {
+  margin: 0 9px 0 0;
+}
